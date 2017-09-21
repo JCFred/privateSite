@@ -1,3 +1,16 @@
+@font-face {
+  font-family: dreamOrphans;
+  src: url(fonts/dreamOrphans.ttf) format('truetype');
+}
+@font-face {
+  font-family: colab;
+  src: url(fonts/ColabReg.otf) format('opentype');
+}
+
+html {
+  min-width: 769px;
+  min-height: 600px;
+}
 body {
   width:100vw;
   height:100vh;
@@ -8,46 +21,206 @@ body {
 }
 
 header {
-  height:62px;
+  max-height:62px;
+  min-height:62px;
   width:100vw;
-  background-color: rgb(73, 179, 172);
+  min-width: 769px;
+  background-color: #5e5d5f;
   display:flex;
   justify-content: space-between;
 }
-
-main {
-}
-
-footer {
-  height:62px;
-  width:100vw;
-  background-color: rgb(73, 179, 172);
-  display:flex;
-  justify-content: space-between;
-}
-
 .logo {
-  border:1px solid black;
   margin-left: 10px;
+  font-family: dreamOrphans;
 }
-
+.logo h1 {
+  color:#a47fe1;
+}
 .nav {
   display: flex;
   justify-content: space-around;
-  border:1px solid black;
-  width: 400px;
-  margin-right: 10px;
+  align-items: flex-end;
+  width: 300px;
+  margin-right: 100px;
+}
+.navBtn {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100px;
+  height:100%;
+  text-align: center;
+  color:#ececec;;
+  background-color: #5e5d5f;
+  border:0px;
+  font-size: 1.2em;
+  font-family: dreamOrphans;
+}
+.navBtn:hover {
+  background-color: #767578;
+  color:#a47fe1;
 }
 
-.tempDiv {
+main {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-width:750px;
+  height:100%;
+  min-height:620px;
+  background-color: #ececec;
+}
+#mainBackGround {
+  display:flex;
+  justify-content: center;
+  background-position: center;
+  width:100%;
+  height:70%;
+  background-image: url(images/denverSkyline.jpg);
+}
+.content {
+  width:750px;
+  /*height:600px;*/
+  display:flex;
+}
+.textBox {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ececec;
+}
+.textBox h2 {
+  font-family: dreamOrphans;
+  font-size: 2em;
+}
+.textBox p {
+  font-family: colab;
+  font-size: 1.5em;
+}
+
+.imageBox {
+  width:50%;
+  display:flex;
+}
+.leftPics {
+  width:50%;
+  display:flex;
+  flex-direction: column;
+}
+.rightPics {
+  width:50%;
+  display:flex;
+  flex-direction:column-reverse;
+}
+.picA {
+  height:100px;
+  background-color: #5e5d5f;
+}
+.picB {
+  height:300px;
+  background-color: #a47fe1;
+}
+.picC {
+  height:200px;
+  background-color: #a47fe1;
+}
+
+.WorkContent {
+  width:682px;
+  /*height:632px;*/
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.workSection {
+  display:flex;
+  flex-direction: column;
+}
+.hoverDivTop {
+  width:225px;
   display:flex;
   flex-direction: column-reverse;
-  border:1px solid black;
-  width:100px;
-  text-align: center;
-  color:black;
+  background-color: blue;
+}
+.hoverDivBot {
+  width:225px;
+  display:flex;
+  flex-direction: column;
+}
+.modalDiv {
+  display:none;
+  height:0px;
+  background-color: #a47fe1;
+}
+.displayDiv {
+  height:128px;
+  background-color: #5e5d5f;
+}
+#hoverA:hover #modalA {
+  display:flex;
+  height:192px;
+}
+#hoverB:hover #modalB {
+  display:flex;
+  height:192px;
+}
+#hoverC:hover #modalC {
+  display:flex;
+  height:192px;
+}
+#hoverD:hover #modalD {
+  display:flex;
+  height:192px;
+}
+#hoverE:hover #modalE {
+  display:flex;
+  height:192px;
+}
+#hoverF:hover #modalF {
+  display:flex;
+  height:192px;
 }
 
-.tempDiv:hover {
-  color:white;
+.contactContent {
+  width:750px;
+  height:600px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.linkDiv {
+  margin-top:20px;
+}
+#cardImg {
+  width:622px;
+  height:357px;
+
+}
+
+footer {
+  max-height:58px;
+  min-height:58px;
+  width:100vw;
+  background-color: #5e5d5f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:#a47fe1;
+  font-family: dreamOrphans;
+}
+footer h4 {
+
+}
+
+
+.selected {
+  color:#a47fe1;
+  background-color: #ececec;
+}
+.border1 {
+  box-sizing: border-box;
+  border:1px solid black;
 }
